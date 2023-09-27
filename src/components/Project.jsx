@@ -59,9 +59,6 @@ const Project = () => {
     },
   ];
 
-
-  
-
   const toggleShowAll = () => {
     setShowAll(!showAll);
   };
@@ -70,6 +67,10 @@ const Project = () => {
 
   return (
     <section className="text-gray-600 body-font">
+      <div className="flex flex-col text-2xl font-bold text-stone-700 px-10 pr-12 gap-5">
+        <span className="text-xl"> A Set of Particular Projects I do :-</span>
+        <span className=""> My Projects</span>
+      </div>
       <div className="px-5 pt-12 pb-8 mx-auto">
         <div className="flex flex-wrap -m-4">
           {displayedProjects.map((project, index) => (
