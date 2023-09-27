@@ -54,7 +54,7 @@ const Project = () => {
     {
       title: "my portfolio",
       technologies: "next js, react js, tailwind css",
-      githubLink: "https://aashus3110.github.io/myportfolio/",
+      githubLink: "https://myportfolio-bay-one.vercel.app/",
       imageSrc: P7,
     },
   ];
