@@ -11,7 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Project = () => {
-  const [showAll, setShowAll] = useState(false); // State to track whether to show all projects
+  const [showCount, setShowCount] = useState(2); // State to track how many items to show
 
   // Define your project data here as an array of objects
   const projects = [
@@ -60,11 +60,18 @@ const Project = () => {
   ];
 
   const toggleShowAll = () => {
-    setShowAll(!showAll);
+    setShowAll(false);
+
+    setTimeout(() => {
+      setShowAll(true);
+    }, 1000);
   };
 
-  const displayedProjects = showAll ? projects : projects.slice(0, 2);
+  const toggleShowMore = () => {
+    setShowCount((prevCount) => prevCount + 2); // Show 2 more items on every click
+  };
 
+  const displayedProjects = projects.slice(0, showCount);
   return (
     <section className="text-gray-600 body-font">
       <div className="flex flex-col text-2xl font-bold text-stone-700 px-10 pr-12 gap-5">
@@ -120,16 +127,16 @@ const Project = () => {
             </div>
           ))}
         </div>
-        {!showAll && (
-          <div className="text-center mt-8">
+        <div className="text-center mt-8">
+          {showCount < projects.length && (
             <button
-              onClick={toggleShowAll}
-              className="bg-sky-800 hover:bg-sky-500 text-cyan-100 font-semibold py-1 px-6 rounded-full cursor-pointer"
+              onClick={toggleShowMore}
+              className="bg-sky-600 hover:bg-sky-500 text-cyan-100 text-sm font-semibold py-1 px-6 rounded-full cursor-pointer"
             >
               Load More
             </button>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </section>
   );
