@@ -75,12 +75,12 @@ const Project = () => {
         <div className="flex flex-wrap -m-4">
           {displayedProjects.map((project, index) => (
             <div key={index} className="p-4 md:w-1/2 lg:w-1/3">
-              <div className="h-full border-2 border-stone-500/30 border-opacity-60 rounded-lg overflow-hidden">
+              <div className="h-full border-2 border-stone-500/30 border-opacity-60 rounded-lg overflow-hidden bg-cyan-50">
                 <Image
                   src={project.imageSrc}
                   width={0}
                   height={0}
-                  className="mx-auto hover:scale-90 transition-transform duration-500 brightness-100 contrast-100 rounded-lg"
+                  className="mx-auto hover:scale-90 hover:drop-shadow-md transition-transform duration-500 brightness-100 contrast-100 rounded-lg"
                   alt="Project Image"
                   priority
                 />
@@ -124,7 +124,7 @@ const Project = () => {
           <div className="text-center mt-8">
             <button
               onClick={toggleShowAll}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full cursor-pointer"
+              className="bg-sky-800 hover:bg-sky-500 text-cyan-100 font-semibold py-1 px-6 rounded-full cursor-pointer"
             >
               Load More
             </button>
