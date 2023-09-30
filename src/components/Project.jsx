@@ -89,7 +89,7 @@ const Project = () => {
                   height={0}
                   className="mx-auto hover:scale-90 hover:drop-shadow-md transition-transform duration-500 brightness-100 contrast-100 rounded-lg"
                   alt="Project Image"
-                  priority
+                  loading="eager"
                 />
                 <div className="p-6 capitalize text-stone-700">
                   <div className="Title flex flex-col">

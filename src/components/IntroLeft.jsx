@@ -7,8 +7,8 @@ import TypewriterComponent from "typewriter-effect";
 const IntroLeft = () => {
   return (
     <>
-      <div className="md:text-3xl text-2xl font-extrabold text-stone-700 md:px-20 md:py-36 py-10 flex flex-col gap-3 text-center min-[775px]:px-10">
-        <div className="flex gap-1 flex-col md:flex-row justify-center min-[770px]:flex-col">
+      <div className="md:text-3xl text-2xl font-extrabold text-stone-700 lg:px-20 md:py-36 py-10 flex flex-col gap-3 text-center min-[765px]:px-5">
+        <div className="flex gap-1 flex-col md:flex-col justify-center ">
           <span className="">Hi, I'm</span>
           <span className="md:text-4xl text-3xl text-cyan-950 drop-shadow-md">
             Aashutosh Singh
