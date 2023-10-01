@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Nunito } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const nunito = Nunito({
   weight: "400",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
