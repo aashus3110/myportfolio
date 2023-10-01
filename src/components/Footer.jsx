@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-slate-300 text-sm">
-          © 2023 Your Website Name. All Rights Reserved.
+          © 2023 Aashutosh Singh. All Rights Reserved.
         </p>
       </div>
     </footer>
