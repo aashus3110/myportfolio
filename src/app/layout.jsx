@@ -19,7 +19,9 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-gradient-to-tr from-sky-200 from-40% via-cyan-500 to-blue-200 to-70% ${nunito.className}`}
       >
-        <Navbar />
+        <div className="sticky top-0 z-[999]">
+          <Navbar />
+        </div>
         {children}
         <Footer />
       </body>

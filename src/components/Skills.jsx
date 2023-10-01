@@ -8,7 +8,7 @@ import Progres from "./Progres";
 
 const Skills = () => {
   return (
-    <div className="skills lg:h-[30rem] h-[90rem] py-5">
+    <div className="skills lg:h-[27rem] h-[90rem] py-5">
       <div className="flex flex-col text-2xl font-bold text-stone-700 px-10 gap-5">
         <span className="text-xl">A Set of Particular Skills I know :-</span>
         <span className="">My Skills</span>

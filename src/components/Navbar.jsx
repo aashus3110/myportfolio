@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import React, { useRef } from "react";
 import {
   AiOutlineGithub,
@@ -64,13 +65,33 @@ const Navbar = () => {
         <div className="md:block hidden">
           <div className="flex items-center gap-20">
             <div className="flex gap-8 text-sm font-semibold  ">
-              <span className="cursor-pointer hover:text-slate-300 ">Home</span>
-              <span className="cursor-pointer hover:text-slate-300 ">
+              <ScrollLink
+                className="cursor-pointer hover:text-slate-300 "
+                activeClass="activeClass"
+                to="intro"
+                spy={true}
+                smooth={true}
+              >
+                Home
+              </ScrollLink>
+              <ScrollLink
+                className="cursor-pointer hover:text-slate-300 "
+                activeClass="activeClass"
+                to="skills"
+                spy={true}
+                smooth={true}
+              >
                 Skills
-              </span>
-              <span className="cursor-pointer hover:text-slate-300 ">
+              </ScrollLink>
+              <ScrollLink
+                className="cursor-pointer hover:text-slate-300 "
+                activeClass="activeClass"
+                to="projects"
+                spy={true}
+                smooth={true}
+              >
                 Projects
-              </span>
+              </ScrollLink>
             </div>
             <div className="">
               <div className="flex gap-4 ">

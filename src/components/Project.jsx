@@ -73,7 +73,7 @@ const Project = () => {
 
   const displayedProjects = projects.slice(0, showCount);
   return (
-    <section className="text-gray-600 body-font">
+    <section className="projects text-gray-600 body-font">
       <div className="flex flex-col text-2xl font-bold text-stone-700 px-10 pr-12 gap-5">
         <span className="text-xl"> A Set of Particular Projects I do :-</span>
         <span className=""> My Projects</span>
