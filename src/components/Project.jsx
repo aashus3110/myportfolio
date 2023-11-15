@@ -7,6 +7,7 @@ import P4 from "@/components/assets/P4.png";
 import P5 from "@/components/assets/P5.png";
 import P6 from "@/components/assets/P6.png";
 import P7 from "@/components/assets/P7.png";
+import P8 from "@/components/assets/P8.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -50,6 +51,12 @@ const Project = () => {
       technologies: "react js, mongoDB, tailwind css",
       githubLink: "https://github.com/aashus3110/Blog",
       imageSrc: P6,
+    },
+    {
+      title: "Next-blog post website",
+      technologies: "Next Js, react js, mongoDB, tailwind css",
+      githubLink: "https://github.com/aashus3110/Blog",
+      imageSrc: P8,
     },
     {
       title: "my portfolio",
