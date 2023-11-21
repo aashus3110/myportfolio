@@ -138,7 +138,7 @@ const Project = () => {
           {showCount < projects.length && (
             <button
               onClick={toggleShowMore}
-              className="bg-sky-600 hover:bg-sky-500 text-cyan-100 text-sm font-semibold py-1 px-6 rounded-full cursor-pointer"
+              className="bg-sky-600  hover:bg-sky-500 text-cyan-100 text-sm font-semibold py-1 px-6 rounded-full cursor-pointer"
             >
               Load More
             </button>
